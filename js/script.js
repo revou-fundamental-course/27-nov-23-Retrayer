@@ -1,9 +1,9 @@
 function hitungayam() {
-     var alasi = parseFloat(document.getElementById("alasi").value);
-     var tinggian = parseFloat(document.getElementById("tinggian").value);
-     var sisi_C = parseFloat(document.getElementById("sisi_C").value);
-     var luasa =  alasi + tinggian + sisi_C ;
-     document.getElementById("keliling").value = luasa;
+     var Alpha = parseFloat(document.getElementById("Alpha").value);
+     var Beta = parseFloat(document.getElementById("Beta").value);
+     var Charlie = parseFloat(document.getElementById("Charlie").value);
+     var kel =  Alpha + Beta + Charlie ;
+     document.getElementById("keliling").value = kel;
  }
  
  function hitungluas() {
@@ -20,8 +20,8 @@ function hitungayam() {
  }
  
  function resetkeliling() {
-     var alasi = document.getElementById("alasi").value="";
-     var tinggian = document.getElementById("tinggian").value="";
-     var sisi_C = document.getElementById("sisi_C").value="";
+     var Alpha = document.getElementById("Alpha").value="";
+     var Beta = document.getElementById("Beta").value="";
+     var Charlie = document.getElementById("Charlie").value="";
      var keliling = document.getElementById("keliling").value="";
  }

@@ -2,72 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <title>Perhitungan Luas dan Keliling Segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    <h2> Perhitungan Luas dan Keliling Segitiga </h2>
-    <p> Web ini didesain untuk dapat membantumu menghitung luas dan keliling segitiga</p>
-    <h4>Menghitung keliling Segitiga</h4>
-<table>
-   <tr>
-        <td>sisi A</td>
-        <td>:</td>
-        <td><input type="number" id="alasi" name="sisi A"></td>
-   </tr>
-   <tr>
-        <td>Sisi B</td>
-        <td>:</td>
-        <td><input type="number" id="tinggian" name="sisi B"></td>
-   </tr>
-   <tr>
-      <td>Sisi C</td>
-      <td>:</td>
-      <td><input type="number" id="sisi_C" name="sisi C"></td>
- </tr>  
-    <tr>
-        <td>Keliling</td>
-        <td>:</td>
-        <td><input type="number"  id="keliling" name="Keliling" disabled="true" size="5"></td>
-   </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td><input type="button" value="hitung" onClick="hitungayam()"></td>
-   </tr>
-   <tr>
-      <td></td>
-      <td></td>
-      <td><button onClick="resetkeliling()"> reset </button></td></tr>
-</table>
-<h4>Menghitung Luas Segitiga</h4>
-<table>
-   <tr>
-        <td>Alas</td>
-        <td>:</td>
-        <td><input type="number" id="alas" name="alas"></td>
-   </tr>
-   <tr>
-        <td>Tinggi</td>
-        <td>:</td>
-        <td><input type="number" id="tinggi" name="tinggi"></td>
-   </tr> 
-    <tr>
-        <td>Luas</td>
-        <td>:</td>
-        <td><input type="number"  id="luas" name="luas" disabled="true" size="5"></td>
-   </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td><input type="button" value="hitung" onClick="hitungluas()"></td>
-   </tr>
-   <tr>
-      <td></td>
-      <td></td>
-      <td><button onClick="resetluas()"> reset </button></td>
-</tr>
-</table>
-</body>
-</html>
+     <header>
+         <h1>Perhitungan Luas dan Keliling Segitiga</h1>
+         <p>Web ini didesain untuk dapat membantumu menghitung luas dan keliling segitiga</p>
+     </header>
+ 
+     <main>
+         <div class="calculator-container">
+         <section id="keliling-section">
+             <h2>Menghitung Keliling Segitiga</h2>
+             <img src="https://1.bp.blogspot.com/-8ECiWkXVFa8/X5i0XGIPc7I/AAAAAAAARxM/vUxWSahkV3UR28ziLVGwsatdjfaqpoNCwCLcBGAsYHQ/s1280/Rumus%2BKeliling%2BSegitiga.png" alt="Rumus Keliling Segitiga Beserta Gambar" />
+ 
+             <form>
+                 <label for="Alpha">Sisi A:</label>
+                 <input type="number" id="Alpha" name="sisi A">
+ 
+                 <label for="Beta">Sisi B:</label>
+                 <input type="number" id="Beta" name="sisi B">
+ 
+                 <label for="Charlie">Sisi C:</label>
+                 <input type="number" id="Charlie" name="sisi C">
+ 
+                 <label for="keliling">Keliling:</label>
+                 <input type="number" id="keliling" name="Keliling" disabled size="5">
+ 
+                 <button type="button" onclick="hitungayam()">Hitung</button>
+                 <button type="button" onclick="resetkeliling()">Reset</button>
+             </form>
+         </section>
+ 
+         <section id="luas-section">
+             <h2>Menghitung Luas Segitiga</h2>
+             <img src="https://blog-static.mamikos.com/wp-content/uploads/2021/04/luas-segitiga.jpg" alt="Rumus Luas Segitiga Beserta Gambar" />
+ 
+             <form>
+                 <label for="alas">Alas:</label>
+                 <input type="number" id="alas" name="alas">
+ 
+                 <label for="tinggi">Tinggi:</label>
+                 <input type="number" id="tinggi" name="tinggi">
+ 
+                 <label for="luas">Luas:</label>
+                 <input type="number" id="luas" name="luas" disabled size="5">
+ 
+                 <button type="button" onclick="hitungluas()">Hitung</button>
+                 <button type="button" onclick="resetluas()">Reset</button>
+             </form>
+         </section>
+         </div>
+     </main>
+ </body>
+ 
+ </html>
