@@ -79,3 +79,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+button:active {
+    background-color: #3e8948; /* Change the color to your desired pressed color */
+}
