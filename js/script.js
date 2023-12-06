@@ -1,27 +1,27 @@
-function hitungluas() {
-     alas = document.getElementById("alas").value;
-     tinggi = document.getElementById("tinggi").value;
-     luas = (alas * tinggi) * 0.5;
+function hitungayam() {
+     var alasi = parseFloat(document.getElementById("alasi").value);
+     var tinggian = parseFloat(document.getElementById("tinggian").value);
+     var sisi_C = parseFloat(document.getElementById("sisi_C").value);
+     var luasa =  alasi + tinggian + sisi_C ;
+     document.getElementById("keliling").value = luasa;
+ }
+ 
+ function hitungluas() {
+     var alas = parseFloat(document.getElementById("alas").value);
+     var tinggi = parseFloat(document.getElementById("tinggi").value);
+     var luas = (alas * tinggi) * 0.5;
      document.getElementById("luas").value = luas;
-}
-
-function resetluas() {
-     alas = document.getElementById("alas").value="";
-     tinggi = document.getElementById("tinggi").value="";
-     luas = document.getElementById("luas").value="";
-}
-
-function hitungkeliling() {
-     sisi_A = document.getElementById("sisi_A").value;
-     sisi_B = document.getElementById("sisi_B").value;
-     sisi_C = document.getElementById("sisi_C").value;
-     keliling = sisi_A*sisi_B*sisi_C;
-     document.getElementById("keliling").value= keliling;
-}
-
-function resetkeliling() {
-     A = document.getElementById("sisi_A").value="";
-     B = document.getElementById("sisi_B").value="";
-     C = document.getElementById("sisi_C").value="";
-     keliling = document.getElementById("keliling").value="";
-}
+ }
+ 
+ function resetluas() {
+     var alas = document.getElementById("alas").value="";
+     var tinggi = document.getElementById("tinggi").value="";
+     var luas = document.getElementById("luas").value="";
+ }
+ 
+ function resetkeliling() {
+     var alasi = document.getElementById("alasi").value="";
+     var tinggian = document.getElementById("tinggian").value="";
+     var sisi_C = document.getElementById("sisi_C").value="";
+     var keliling = document.getElementById("keliling").value="";
+ }

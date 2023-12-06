@@ -3,75 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perhitungan Luas dan Keliling Segitiga</title>
+    <title>Document</title>
     <script src="js/script.js"></script>
 </head>
 <body>
     <h2> Perhitungan Luas dan Keliling Segitiga </h2>
     <p> Web ini didesain untuk dapat membantumu menghitung luas dan keliling segitiga</p>
-<div>
-    <h4>Menghitung Luas Segitiga</h4>
-    <table>
-       <tr>
-            <td>Alas</td>
-            <td>:</td>
-            <td><input type="number" id="alas" name="alas"></td>
-       </tr>
-       <tr>
-            <td>Tinggi</td>
-            <td>:</td>
-            <td><input type="number" id="tinggi" name="tinggi"></td>
-       </tr> 
-        <tr>
-            <td>Luas</td>
-            <td>:</td>
-            <td><input type="number"  id="luas" name="luas" disabled="true" size="5"></td>
-       </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td><input type="button" value="hitung" onClick="hitungluas()"></td>
-       </tr>
-       <tr>
-          <td></td>
-          <td></td>
-          <td><button onClick="resetluas()"> reset </button></td>
+    <h4>Menghitung keliling Segitiga</h4>
+<table>
+   <tr>
+        <td>sisi A</td>
+        <td>:</td>
+        <td><input type="number" id="alasi" name="sisi A"></td>
+   </tr>
+   <tr>
+        <td>Sisi B</td>
+        <td>:</td>
+        <td><input type="number" id="tinggian" name="sisi B"></td>
+   </tr>
+   <tr>
+      <td>Sisi C</td>
+      <td>:</td>
+      <td><input type="number" id="sisi_C" name="sisi C"></td>
+ </tr>  
+    <tr>
+        <td>Keliling</td>
+        <td>:</td>
+        <td><input type="number"  id="keliling" name="Keliling" disabled="true" size="5"></td>
+   </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="hitung" onClick="hitungayam()"></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td><button onClick="resetkeliling()"> reset </button></td></tr>
+</table>
+<h4>Menghitung Luas Segitiga</h4>
+<table>
+   <tr>
+        <td>Alas</td>
+        <td>:</td>
+        <td><input type="number" id="alas" name="alas"></td>
+   </tr>
+   <tr>
+        <td>Tinggi</td>
+        <td>:</td>
+        <td><input type="number" id="tinggi" name="tinggi"></td>
+   </tr> 
+    <tr>
+        <td>Luas</td>
+        <td>:</td>
+        <td><input type="number"  id="luas" name="luas" disabled="true" size="5"></td>
+   </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="hitung" onClick="hitungluas()"></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td><button onClick="resetluas()"> reset </button></td>
 </tr>
 </table>
-</div>
-<div>
-     <h4>Menghitung keliling Segitiga</h4>
-    <table>
-       <tr>
-            <td>sisi A</td>
-            <td>:</td>
-            <td><input type="number" id="sisi_A" name="sisi A"></td>
-       </tr>
-       <tr>
-            <td>Sisi B</td>
-            <td>:</td>
-            <td><input type="number" id="sisi_B" name="sisi B"></td>
-       </tr>
-       <tr>
-          <td>Sisi C</td>
-          <td>:</td>
-          <td><input type="number" id="sisi_C" name="sisi C"></td>
-     </tr>  
-        <tr>
-            <td>Keliling</td>
-            <td>:</td>
-            <td><input type="number"  id="Keliling" name="Keliling" disabled="true" size="5"></td>
-       </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td><input type="button" value="hitung" onClick="hitungkeliling()"></td>
-       </tr>
-       <tr>
-          <td></td>
-          <td></td>
-          <td><button onClick="resetkeliling()"> reset </button></td>
-    </table>
-</div>
 </body>
 </html>
